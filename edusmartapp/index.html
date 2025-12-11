@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSmart: College Learning & AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html, body, #root {
+        height: 100%;
+        overflow: hidden;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-up {
+        animation: fadeIn 0.3s ease-out, fadeInUp 0.3s ease-out;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'ui-primary': '#4F46E5', // A modern indigo
+              'ui-background': '#F8FAFC', // A cooler, brighter off-white
+              'ui-card': '#FFFFFF',
+              'ui-text-primary': '#111827', // Darker gray
+              'ui-text-secondary': '#6B7280', // Medium gray
+              'ui-border': '#E5E7EB', // Lighter border
+              'accent-blue': '#3B82F6',
+              'accent-green': '#10B981',
+              'accent-red': '#EF4444',
+              'accent-yellow': '#F59E0B',
+              'accent-purple': '#8B5CF6',
+              'accent-teal': '#14B8A6',
+              'ui-hover': '#F3F4F6',
+            },
+            borderRadius: {
+              'xl': '1rem',
+              '2xl': '1.5rem',
+              '3xl': '2rem',
+            },
+            boxShadow: {
+              'apple': '0 4px 12px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0,0,0,0.1)',
+              'apple-lg': '0 8px 30px rgba(0, 0, 0, 0.12)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-ui-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

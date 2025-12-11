@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Copy of Copy of EduSmart: College Learning & AI Assistant",
+  "description": "A comprehensive learning platform that combines your college's course materials with an intelligent AI assistant to provide personalized, contextual academic support for students.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

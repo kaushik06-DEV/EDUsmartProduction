@@ -1,4 +1,4 @@
-# EduSmart
+# EDUsmartProduction
 
 EduSmart is a full-stack learning management experience built with a React (Vite + TypeScript) frontend and a Node/Express + MongoDB backend. It supports distinct student, tutor, and admin roles, AI-assisted study tools, hackathon management, and rich course/material workflows.
 
